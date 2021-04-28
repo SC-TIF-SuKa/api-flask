@@ -4,6 +4,7 @@ from marshmallow import fields
 from marshmallow_sqlalchemy import ModelSchema
 from flask_migrate import Migrate
 
+# DB Config
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username_db:password_db@localhost/name_of_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
